@@ -18,7 +18,7 @@ public class Setup {
         caps.setCapability("appPackage", "com.google.android.calculator");
         caps.setCapability("appActivity", "com.android.calculator2.Calculator");
         caps.setCapability("automationName", "UiAutomator2");
-        caps.setCapability("app", "C:\\\\Users\\\\User\\\\ApkProjects\\\\calculator.apk");
+        caps.setCapability("app", System.getProperty("user.dir")+"/src/test/resources/calculator.apk");
 
         URL url = new URL("http://127.0.0.1:4723");
         driver=new AndroidDriver(url, caps);
